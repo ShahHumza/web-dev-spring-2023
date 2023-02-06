@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(215, 252, 252);  
+            
+        }
+
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .container {
+            max-width: 1231px;
+            margin: 0 auto;
+        }
+        h3 {
+            margin: 0;
+        }
+        .box1 {
+            background-color: rgb(255, 255, 255);
+            border-left: 5px solid rgb(39, 196, 64);
+            padding: 15px;
+            margin: 25px;
+        }
+        .box2 {
+            border-color: rgb(245, 245, 80);
+        }
+         
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgb(47, 148, 44);
+            font-family: Arial;
+            padding: 5px 10px;
+        }
+
+        /* Title Ex: File Edit View */
+        .navbar a {
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            padding: 5px 16px;
+            text-decoration: none;
+        }
+
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover {
+            background-color: rgb(47, 148, 44);
+        }
+
+        /* The dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(47, 148, 44);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+            top: 100%;
+            left: 0;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: rgb(29, 230, 22);
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+
+
+</head>
+        <body>
+            <div class="navbar">
+                <div class="dropdown">
+                    <a class="active"><b>File</b></a>
+                    <div class="dropdown-content">
+                        <a href="">New</a>
+                        <a href="">Open</a>
+                        <a href="">Save</a>
+                        <a href="">Print</a>
+                        <a href="">Close</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="active">Edit</a>
+                    <div class="dropdown-content">
+                        <a href="">Undo</a>
+                        <a href="">Redo</a>
+                        <a href="">Cut</a>
+                        <a href="">Copy</a>
+                        <a href="">Paste</a>
+                        <a href="">Delete</a>
+                        <a href="">Select All</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="active"><b>View</b></a>
+                    <div class="dropdown-content">
+                        <a href="">Zoom In</a>
+                        <a href="">Zoom Out</a>
+                        <a href="">Actual Size</a>
+                        <a href="">Fit Page</a>
+                        <a href="">Fit Width</a>
+                        <a href="">Fit Height</a>
+                        <a href="">Rotate Left</a>
+                        <a href="">Rotate Right</a>
+                        <a href="">Full Screen</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+            <div class="container">
+
+                <div class="box1">
+                    <h3>Instructions</h3>
+                    <p>Recreate this page using <b><i>only CSS</i></b>. Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
+                </div>
+        
+                <div class="box1 box2">
+                    <h3>Extra Credit</h3>
+                    <p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for)</p>
+                </div>
+        
+            </div>
+
+
+        </body>
+</html>

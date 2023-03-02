@@ -10,7 +10,7 @@ const session = useSession();
 <template>
     
         <div class="navbar-item" v-if="session == null">
-            Welcome, {{ session.user.name }}
+            Welcome, {{ 'Humza Shah' }}
             (<a @click="$event => session.user = null">logout</a>)
               <a class="button is-primary" @click="login">
                 <span class="icon">

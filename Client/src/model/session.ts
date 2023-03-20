@@ -1,13 +1,12 @@
-import { reactive } from "vue";
 
+import { reactive } from "vue";
+import { useRouter } from "vue-router";
 
 const session = reactive({
-    user:null as User | null,
-
+    user: null as User | null,
 })
 
-//question mark means optional
-interface User{
+interface User {
     id?: number;
     name: string;
     email?: string;
@@ -20,7 +19,20 @@ export function useSession() {
 }
 
 export function login() {
-    session.user ={
-        name:'Humza Shah',
+    session.user = {
+        name: "Humza Shah",
     }
+}
+
+export function useLogout() {
+    const router = useRouter();
+
+    return function(){
+        console.log({router});
+        session.user = null;
+
+        router.push("\login");
+    }
+    
+
 }

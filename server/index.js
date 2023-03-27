@@ -11,7 +11,6 @@ app
     .use(express.json())
     .use(express.static(path.join(__dirname, '../client/dist')))
 
-
 // Actions
 app
     .get('/api/v1/', (req, res) => {

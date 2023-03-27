@@ -1,3 +1,5 @@
+/*  B"H
+*/
 
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
@@ -20,19 +22,17 @@ export function useSession() {
 
 export function login() {
     session.user = {
-        name: "Humza Shah",
+        name: "John Doe",
     }
 }
 
 export function useLogout() {
     const router = useRouter();
-
+    
     return function(){
         console.log({router});
         session.user = null;
 
-        router.push("\login");
+        router.push("/login");
     }
-    
-
 }

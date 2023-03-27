@@ -1,6 +1,7 @@
+/*  B"H
+*/
+
 import data from "../data/products.json";
-
-
 
 export interface Product {
     id: number;
@@ -9,12 +10,11 @@ export interface Product {
     price: number;
     discountPercentage: number;
     rating: number;
-    stock: number; 
+    stock: number;
     brand: string;
     category: string;
     thumbnail: string;
     images: string[];
-
 }
 
 export function getProducts(): Product[] {

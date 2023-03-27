@@ -6,9 +6,8 @@ import { useSession, login, useLogout } from '@/model/session';
 const session = useSession();
 const logout = useLogout();
 
-
 function logout2() {
-    logout
+    logout();
 }
 
 </script>
@@ -16,7 +15,7 @@ function logout2() {
 <template>
             <div class="navbar-item" v-if="session.user">
                 Welcome, {{ session.user.name }}
-                (<a @click=" $event => logout2">logout</a>)
+                (<a @click="logout2()">logout</a>)
             </div>
             <div class="navbar-item" v-else>
                 <a class="button is-primary" @click="login">

@@ -1,7 +1,7 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,sass,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,sass,node
+# Created by https://www.toptal.com/developers/gitignore/api/vuejs,node,sass,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=vuejs,node,sass,visualstudiocode
 
-### Node ### 
+### Node ###
 # Logs
 logs
 *.log
@@ -166,4 +166,11 @@ dist
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,sass,node
+### Vuejs ###
+# Recommended template: Node.gitignore
+
+dist/
+npm-debug.log
+yarn-error.log
+
+# End of https://www.toptal.com/developers/gitignore/api/vuejs,node,sass,visualstudiocode

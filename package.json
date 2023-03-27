@@ -5,23 +5,24 @@
   "license": "BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShahHumza/web-dev-spring-2023.git"
+    "url": "git+https://github.com/jewpaltz/web-dev-spring-2023.git"
   },
   "private": true,
   "workspaces": [
-    "Client"
+    "client"
   ],
+
   "scripts": {
     "build": "npm i -ws && npm run build -ws",
     "start": "node server/index.js",
     "dev": "nodemon server/index.js --watch server"
   },
+
   "dependencies": {
-    "express":"4.18.2"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon":"2.0.20"
+    "nodemon": "^2.0.20"
   }
-  
 
 }
